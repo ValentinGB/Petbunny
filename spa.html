@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Spa - Petbunny</title>
+    <meta name="description" content="Detalle de servicios de Spa y Baños para tu mascota en Petbunny. Baño clásico, medicado, luxxe, spa luxxe y ozonoterapia.">
+    
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom tweaks for the Spa detail page to make it stand out */
+        .spa-detail-section {
+            padding: 120px 0;
+            background: linear-gradient(135deg, var(--bg-base), var(--primary-light));
+            min-height: 100vh;
+        }
+        .spa-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            margin-top: 50px;
+        }
+        .spa-detail-card {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: 30px;
+            padding: 40px;
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+            scroll-margin-top: 100px; /* offset for scrolling to anchor */
+        }
+        .spa-detail-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--hover-shadow);
+        }
+        .spa-detail-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: var(--primary-light);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            box-shadow: 0 8px 24px rgba(255, 141, 161, 0.15);
+        }
+        .spa-detail-card:nth-child(even) .spa-detail-icon {
+            background-color: var(--secondary-light);
+            color: var(--secondary);
+            box-shadow: 0 8px 24px rgba(157, 141, 241, 0.15);
+        }
+        .spa-detail-card:nth-child(3n) .spa-detail-icon {
+            background-color: var(--accent-light);
+            color: var(--accent);
+            box-shadow: 0 8px 24px rgba(107, 229, 195, 0.15);
+        }
+        .spa-detail-info h3 {
+            font-size: 26px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: var(--text-dark);
+        }
+        .spa-detail-info p {
+            color: var(--text-muted);
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .spa-detail-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            background-color: white;
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+        .back-btn-container {
+            margin-top: 50px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .spa-detail-card {
+                grid-template-columns: 1fr;
+                text-align: center;
+                justify-items: center;
+            }
+            .spa-detail-section {
+                padding: 100px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header" class="scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Petbunny Logo" class="logo-img">
+                <span>Petbunny</span>
+            </a>
+            <div class="nav-actions">
+                <a href="index.html#spa-card" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Volver al Inicio</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Spa Detail Section -->
+    <section class="spa-detail-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Nuestros Tratamientos</span>
+                <h2 class="section-title">Detalle de Servicios de Spa</h2>
+            </div>
+            
+            <div class="spa-detail-grid">
+                <!-- 1. Baño Clásico -->
+                <div class="spa-detail-card glass-card" id="clasico">
+                    <div class="spa-detail-icon">
+                        <i class="fa-solid fa-bath"></i>
+                    </div>
+                    <div class="spa-detail-info">
+                        <h3>Baño Clásico</h3>
+                        <p>Nuestro baño clásico es la base de una higiene perfecta. Incluye un baño completo con shampoo hipoalergénico de pH balanceado según el tipo de pelaje, un secado soplado profundo para remover pelo muerto, cepillado completo, corte de uñas, limpieza delicada de oídos y un toque final de loción perfumada premium.</p>
+                        <div class="spa-detail-badge">
+                            <i class="fa-solid fa-clock"></i> Higiene Básica Completa
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Baño Medicado -->
+                <div class="spa-detail-card glass-card" id="medicado">
+                    <div class="spa-detail-icon">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <div class="spa-detail-info">
+                        <h3>Baño Medicado</h3>
+                        <p>Diseñado especialmente para mascotas con condiciones dermatológicas, alergias, resequedad o sensibilidad en la piel. Utilizamos fórmulas recomendadas por veterinarios (antisépticas, antiparasitarias o calmantes) con tiempos de reposo controlados para asegurar que el tratamiento actúe eficazmente, aliviando la picazón e irritación.</p>
+                        <div class="spa-detail-badge">
+                            <i class="fa-solid fa-shield-halved"></i> Cuidado Dermatológico
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Baño Luxxe -->
+                <div class="spa-detail-card glass-card" id="luxxe-bath">
+                    <div class="spa-detail-icon">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="spa-detail-info">
+                        <h3>Baño Luxxe</h3>
+                        <p>Un servicio de baño de alta gama para los consentidos más exigentes. Incluye baño con shampoo orgánico ultra-hidratante de aromaterapia de tu elección, mascarilla de acondicionamiento profundo para dar brillo, limado de uñas (soft claws), cepillado dental con gel refrescante y la aplicación de nuestros perfumes finos de diseñador.</p>
+                        <div class="spa-detail-badge">
+                            <i class="fa-solid fa-gem"></i> Brillo y Aromaterapia Premium
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Spa Luxxe -->
+                <div class="spa-detail-card glass-card" id="luxxe-spa">
+                    <div class="spa-detail-icon">
+                        <i class="fa-solid fa-hot-tub-person"></i>
+                    </div>
+                    <div class="spa-detail-info">
+                        <h3>Spa Luxxe</h3>
+                        <p>La máxima experiencia de relajación y bienestar para tu mascota. Combina todos los beneficios del Baño Luxxe con una sesión de baño de burbujas tibias, masoterapia corporal relajante para aliviar tensiones musculares, y un difusor de esencias calmantes de lavanda o melisa diseñado para reducir la ansiedad por completo.</p>
+                        <div class="spa-detail-badge">
+                            <i class="fa-solid fa-heart"></i> Relajación y Masajes
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Ozon Pet -->
+                <div class="spa-detail-card glass-card" id="ozon">
+                    <div class="spa-detail-icon">
+                        <i class="fa-solid fa-wind"></i>
+                    </div>
+                    <div class="spa-detail-info">
+                        <h3>Ozon Pet</h3>
+                        <p>Tratamiento de hidroterapia con ozono activo. El ozono tiene un poder bactericida, fungicida y cicatrizante natural de máxima eficacia. Ayuda a abrir los poros de la piel facilitando la eliminación de toxinas, promueve la regeneración celular en pieles dañadas por alergias o dermatitis, estimula el flujo sanguíneo y ayuda a disminuir la caída excesiva de pelo.</p>
+                        <div class="spa-detail-badge">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> Hidroterapia de Vanguardia
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="back-btn-container">
+                <a href="index.html#spa-card" class="btn btn-primary"><i class="fa-solid fa-house"></i> Volver a la Página Principal</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Copyright -->
+    <footer class="footer-bottom">
+        <div class="container text-center">
+            <p>&copy; 2026 Petbunny Boutique & Spa. Todos los derechos reservados. Diseñado con amor para consentir.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

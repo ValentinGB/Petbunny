@@ -219,6 +219,21 @@ header.scrolled {
     box-shadow: 0 4px 12px rgba(255, 141, 161, 0.3);
 }
 
+.logo-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: white;
+    border: 1.5px solid var(--border-color);
+    box-shadow: 0 4px 12px rgba(255, 141, 161, 0.1);
+    transition: var(--transition-smooth);
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.05) rotate(5deg);
+}
+
 .nav-menu {
     display: flex;
     align-items: center;
@@ -588,6 +603,34 @@ header.scrolled {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.service-features li a {
+    color: inherit;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+    border-bottom: 1px dashed transparent;
+}
+
+.service-features li a:hover {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+    padding-left: 2px;
+}
+
+.card-purple .service-features li a:hover {
+    color: var(--secondary);
+    border-bottom-color: var(--secondary);
+}
+
+.card-mint .service-features li a:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+.card-yellow .service-features li a:hover {
+    color: #E2B215;
+    border-bottom-color: #E2B215;
 }
 
 .service-features li::before {
