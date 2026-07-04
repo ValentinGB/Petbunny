@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petbunny - Estética, Hotel y Boutique de Mascotas</title>
+    <meta name="description" content="En Petbunny consentimos a tu mascota con servicios premium de estética, hospedaje, vacunas y perfumería fina de aromaterapia. ¡Reserva hoy mismo!">
+    
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-badge">
+                    <i class="fa-solid fa-paw"></i>
+                </div>
+                <span>Petbunny</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#" class="nav-link">Inicio</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#perfumeria" class="nav-link">Perfumería</a></li>
+                <li><a href="#galeria" class="nav-link">Galería</a></li>
+                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="#reservar" class="btn btn-primary" id="nav-booking-btn">Reservar Cita</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="badge-trendy">
+                    <i class="fa-solid fa-heart"></i> El cuidado chic que merecen
+                </div>
+                <h1 class="hero-title">El spa y hotel boutique <br><span class="text-gradient">para tu mascota</span></h1>
+                <p class="hero-description">
+                    En <strong>Petbunny</strong> creemos que cada mascota es única. Consentimos a tus perritos, gatitos y pequeños compañeros con baños relajantes, cortes con estilo, hospedaje boutique, vacunas y accesorios de moda en un ambiente amoroso y premium.
+                </p>
+                <div class="hero-cta">
+                    <a href="#reservar" class="btn btn-primary">Agendar Cita <i class="fa-solid fa-calendar-days"></i></a>
+                    <a href="#servicios" class="btn btn-outline">Ver Servicios</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Amor y Paciencia</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Spa</h3>
+                        <p>Aromaterapia Fina</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>★ 4.9</h3>
+                        <p>Pet Parents Felices</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image-wrapper">
+                <div class="hero-image-container">
+                    <img src="assets/hero_pets.png" alt="Mascotas felices y cuidadas en Petbunny">
+                </div>
+                
+                <!-- Floating Badges for visual premium wow factor -->
+                <div class="floating-badge badge-left">
+                    <div class="badge-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="badge-info">
+                        <h4>Estética Premium</h4>
+                        <p>Baños y estilo de moda</p>
+                    </div>
+                </div>
+                
+                <div class="floating-badge badge-right">
+                    <div class="badge-icon">
+                        <i class="fa-solid fa-hotel"></i>
+                    </div>
+                    <div class="badge-info">
+                        <h4>Hospedaje de Lujo</h4>
+                        <p>Cuidado 24/7 sin jaulas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section-padding" id="servicios">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">¿Qué Ofrecemos?</span>
+                <h2 class="section-title">Servicios diseñados para su bienestar</h2>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Card 1: Baño y Estética -->
+                <div class="service-card glass-card card-pink">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-shower"></i>
+                    </div>
+                    <h3>Baño y Estética</h3>
+                    <p>Baños terapéuticos, corte de pelo con estilo según raza, corte de uñas, limpieza de oídos y un toque de nuestra perfumería fina exclusiva.</p>
+                    <ul class="service-features">
+                        <li>Corte con estilistas expertas</li>
+                        <li>Shampoo hipoalergénico</li>
+                        <li>Aromaterapia relajante</li>
+                    </ul>
+                    <a href="#reservar" class="service-link">Agendar ahora <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- Card 2: Hotel y Hospedaje -->
+                <div class="service-card glass-card card-purple">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-house-chimney-window"></i>
+                    </div>
+                    <h3>Hospedaje Boutique</h3>
+                    <p>Habitaciones acogedoras y seguras para perros, gatos y pequeñas mascotas. Monitoreo constante, paseos diarios y todo el cariño para que se sientan en casa.</p>
+                    <ul class="service-features">
+                        <li>Cuidado premium sin jaulas</li>
+                        <li>Reportes con fotos diarios</li>
+                        <li>Juegos y socialización</li>
+                    </ul>
+                    <a href="#reservar" class="service-link">Consultar fechas <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- Card 3: Veterinaria Preventiva -->
+                <div class="service-card glass-card card-mint">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3>Cuidado Preventivo</h3>
+                    <p>Mantén a tu peludo fuerte y protegido. Contamos con aplicación de vacunas esenciales y venta de pastillas desparasitantes recomendadas por profesionales.</p>
+                    <ul class="service-features">
+                        <li>Vacunas de alta calidad</li>
+                        <li>Desparasitantes internos/externos</li>
+                        <li>Asesoría de dosis correcta</li>
+                    </ul>
+                    <a href="#reservar" class="service-link">Consultar dosis <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- Card 4: Boutique de Accesorios -->
+                <div class="service-card glass-card card-yellow">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <h3>Accesorios y Moda</h3>
+                    <p>Una cuidada selección de accesorios de mascotas varios. Collares chic, platos cerámicos modernos, juguetes interactivos y premios saludables de alta gama.</p>
+                    <ul class="service-features">
+                        <li>Accesorios modernos y de moda</li>
+                        <li>Juguetes para estimulación mental</li>
+                        <li>Premios 100% naturales</li>
+                    </ul>
+                    <a href="#contacto" class="service-link">Ver catálogo <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Special Aromatherapy Spotlight -->
+            <div class="aromatherapy-section" id="perfumeria">
+                <div class="aromatherapy-grid">
+                    <div class="aromatherapy-content">
+                        <span class="section-subtitle">Exclusividad Petbunny</span>
+                        <h3>Boutique de Aromaterapia y Perfumería Fina</h3>
+                        <p>
+                            En Petbunny llevamos la hora del baño a un nivel superior. Tu mascota no solo lucirá espectacular, sino que se beneficiará de nuestros tratamientos de **Aromaterapia** y **Perfumería Fina**, con fragancias frutales y perfumes de marcas selectas para hembras y machos. ¡Elige su aroma favorito en su próxima cita!
+                        </p>
+                        
+                        <div class="perfume-badges">
+                            <span class="perfume-badge aroma"><i class="fa-solid fa-spa"></i> Aromaterapia</span>
+                            <span class="perfume-badge female"><i class="fa-solid fa-venus"></i> Aromas para Ellas</span>
+                            <span class="perfume-badge male"><i class="fa-solid fa-mars"></i> Aromas para Ellos</span>
+                            <span class="perfume-badge aroma"><i class="fa-solid fa-lemon"></i> Perfumería Frutal</span>
+                        </div>
+                        
+                        <a href="#reservar" class="btn btn-secondary">Reservar Cita con Aromaterapia <i class="fa-solid fa-wand-magic-sparkles"></i></a>
+                    </div>
+                    
+                    <div class="aromatherapy-images">
+                        <div class="aroma-img-wrap span-2" onclick="openAromaLightbox(1)">
+                            <img src="assets/perfume_aromaterapia_1.jpg" alt="Carta de Perfumería y Aromaterapia Petbunny">
+                        </div>
+                        <div class="aroma-img-wrap" onclick="openAromaLightbox(2)">
+                            <img src="assets/perfume_ellas.jpg" alt="Fragancias finas para hembras">
+                        </div>
+                        <div class="aroma-img-wrap" onclick="openAromaLightbox(3)">
+                            <img src="assets/perfume_frutal.jpg" alt="Fragancias frutales para mascotas">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="section-padding" id="galeria" style="background-color: white;">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Nuestros Consentidos</span>
+                <h2 class="section-title">Galería de Mascotas Felices</h2>
+            </div>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="perros">Perros</button>
+                <button class="filter-btn" data-filter="gatos">Gatos</button>
+                <button class="filter-btn" data-filter="pequenos">Pequeños Consentidos</button>
+                <button class="filter-btn" data-filter="perfumes">Perfumería y Spa</button>
+            </div>
+            
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Item 1: Bunny -->
+                <div class="gallery-item" data-category="pequenos" onclick="openLightbox('assets/happy_bunny.png', 'Copito el Conejito', 'Servicio de Estética de Pequeñas Mascotas con baño de manzanilla')">
+                    <img src="assets/happy_bunny.png" alt="Copito el Conejito en Petbunny">
+                    <div class="gallery-overlay">
+                        <h4>Copito</h4>
+                        <p>Baño y Cepillado de Conejos</p>
+                    </div>
+                </div>
+                
+                <!-- Item 2: Hero Pets -->
+                <div class="gallery-item" data-category="perros" onclick="openLightbox('assets/hero_pets.png', 'Samoyedo y Ragdoll', 'Nuestros embajadores luciendo frescos después de su estética')">
+                    <img src="assets/hero_pets.png" alt="Samoyedo y Ragdoll felices en Petbunny">
+                    <div class="gallery-overlay">
+                        <h4>Milo y Luna</h4>
+                        <p>Servicio de Baño e Hidratación</p>
+                    </div>
+                </div>
+                
+                <!-- Item 3: Poodle Bath -->
+                <div class="gallery-item" data-category="perros" onclick="openLightbox('assets/grooming_spa.png', 'Estética de Poodle', 'Baño de burbujas tibias con extracto de menta fresca y lavanda')">
+                    <img src="assets/grooming_spa.png" alt="Poodle tomando baño de spa en Petbunny">
+                    <div class="gallery-overlay">
+                        <h4>Coco</h4>
+                        <p>Spa de Burbujas Relajantes</p>
+                    </div>
+                </div>
+                
+                <!-- Item 4: Pet Hotel Room -->
+                <div class="gallery-item" data-category="pequenos" onclick="openLightbox('assets/pet_hotel.png', 'Habitación Premium de Hotel', 'Instalaciones acogedoras y cómodas con camas de terciopelo')">
+                    <img src="assets/pet_hotel.png" alt="Instalaciones del hotel boutique Petbunny">
+                    <div class="gallery-overlay">
+                        <h4>Hospedaje Boutique</h4>
+                        <p>Cuidado de Noche de Perros y Conejos</p>
+                    </div>
+                </div>
+                
+                <!-- Item 5: Boutique Shelf -->
+                <div class="gallery-item" data-category="perfumes" onclick="openLightbox('assets/pet_shop.png', 'Boutique de Accesorios', 'Collares de moda, platos de diseño y desparasitantes en nuestra boutique')">
+                    <img src="assets/pet_shop.png" alt="Boutique Petbunny con accesorios y desparasitantes">
+                    <div class="gallery-overlay">
+                        <h4>Boutique Petbunny</h4>
+                        <p>Accesorios y Vitaminas</p>
+                    </div>
+                </div>
+                
+                <!-- Item 6: Perfume Aromaterapia Image -->
+                <div class="gallery-item" data-category="perfumes" onclick="openLightbox('assets/perfume_aromaterapia_1.jpg', 'Menú Aromaterapia', 'Esencias de menta, lavanda, melisa, romero, eucalipto y rosas')">
+                    <img src="assets/perfume_aromaterapia_1.jpg" alt="Aromaterapia Petbunny">
+                    <div class="gallery-overlay">
+                        <h4>Aromaterapia</h4>
+                        <p>Tratamientos y Esencias Terapéuticas</p>
+                    </div>
+                </div>
+                
+                <!-- Item 7: Perfume Ellas -->
+                <div class="gallery-item" data-category="perfumes" onclick="openLightbox('assets/perfume_ellas.jpg', 'Aromas para Ellas', 'Perfumes inspirados en fragancias finas para hembras')">
+                    <img src="assets/perfume_ellas.jpg" alt="Aromas para hembras Petbunny">
+                    <div class="gallery-overlay">
+                        <h4>Aromas para Ellas</h4>
+                        <p>Perfumería Fina Femenina</p>
+                    </div>
+                </div>
+                
+                <!-- Item 8: Perfume Ellos -->
+                <div class="gallery-item" data-category="perfumes" onclick="openLightbox('assets/perfume_ellos.jpg', 'Aromas para Ellos', 'Perfumes elegantes inspirados en lociones de diseñador para machos')">
+                    <img src="assets/perfume_ellos.jpg" alt="Aromas para machos Petbunny">
+                    <div class="gallery-overlay">
+                        <h4>Aromas para Ellos</h4>
+                        <p>Perfumería Fina Masculina</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="section-padding" id="nosotros">
+        <div class="container about-grid">
+            <div class="about-image-wrapper">
+                <div class="about-image-container">
+                    <img src="assets/happy_bunny.png" alt="Conejo feliz en Petbunny">
+                </div>
+                <div class="about-floating-card">
+                    <h4>Cuidado Dedicado</h4>
+                    <p>Cada mascota recibe atención personalizada con el amor que merecen.</p>
+                </div>
+            </div>
+            
+            <div class="about-content">
+                <span class="section-subtitle">Sobre Nosotros</span>
+                <h2>Creado por amantes de los animales, para consentir</h2>
+                <p>
+                    En <strong>Petbunny</strong>, nos apasiona el bienestar animal. Entendemos que las mascotas son parte fundamental de la familia, por eso diseñamos un concepto de estética y hotel boutique elegante, moderno y libre de estrés.
+                </p>
+                <p>
+                    Nuestras estilistas y cuidadores son profesionales capacitados que trabajan con empatía, paciencia y técnicas de manejo amable. Nos especializamos en crear experiencias positivas tanto para perros enérgicos, gatos reservados como para pequeños conejos sensibles.
+                </p>
+                
+                <div class="about-features">
+                    <div class="about-feat-item">
+                        <div class="about-feat-icon">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div class="about-feat-info">
+                            <h4>Personal Certificado</h4>
+                            <p>Expertos en estética y bienestar</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-feat-item">
+                        <div class="about-feat-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <div class="about-feat-info">
+                            <h4>Cosmética Orgánica</h4>
+                            <p>Productos libres de parabenos</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-feat-item">
+                        <div class="about-feat-icon">
+                            <i class="fa-solid fa-shield-cat"></i>
+                        </div>
+                        <div class="about-feat-info">
+                            <h4>Instalaciones Seguras</h4>
+                            <p>Áreas climatizadas y monitoreadas</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-feat-item">
+                        <div class="about-feat-icon">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div class="about-feat-info">
+                            <h4>Vacunación al Día</h4>
+                            <p>Seguridad y salud garantizadas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-padding testimonials-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Testimonios</span>
+                <h2 class="section-title">¿Qué dicen nuestros clientes?</h2>
+            </div>
+            
+            <div class="testimonials-slider">
+                <button class="slider-arrow arrow-prev" id="prev-btn" aria-label="Anterior testimonio">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                
+                <div class="slider-container" id="slider-container">
+                    <!-- Slide 1 -->
+                    <div class="slide">
+                        <div class="testimonial-card glass-card">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="testimonial-text">
+                                "El mejor lugar en el que he dejado a mi perrito Toby. Le hicieron un corte hermoso y regresó oliendo a perfume de Rosas y súper relajado. ¡Tienen un trato increíble con los conejos también!"
+                            </p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="pet-parent-avatar">
+                                <img src="assets/hero_pets.png" alt="Toby el perrito">
+                            </div>
+                            <h4>Sofía M.</h4>
+                            <p>Mamá de Toby (Poodle)</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <div class="testimonial-card glass-card">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="testimonial-text">
+                                "Mi gatita Luna suele estresarse mucho con los baños, pero aquí tienen un spa de aromaterapia especial con Lavanda que la calmó por completo. El hotel boutique es muy limpio y las cuidadoras le dan mucho amor."
+                            </p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="pet-parent-avatar">
+                                <img src="assets/happy_bunny.png" alt="Luna la gatita">
+                            </div>
+                            <h4>Camila R.</h4>
+                            <p>Mamá de Luna (Ragdoll)</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <div class="testimonial-card glass-card">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="testimonial-text">
+                                "¡Excelente servicio de desparasitación y vacunas! Además, compramos unas correas pastel divinas. Es genial encontrar un lugar tan moderno, limpio y que de verdad cuide a todas las mascotas pequeñas."
+                            </p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="pet-parent-avatar">
+                                <img src="assets/pet_hotel.png" alt="Mascotas felices">
+                            </div>
+                            <h4>Valeria G.</h4>
+                            <p>Mamá de Bruno y Bombón (Conejo y Pomerania)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="slider-arrow arrow-next" id="next-btn" aria-label="Siguiente testimonio">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                
+                <div class="slider-nav" id="slider-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="section-padding" id="reservar">
+        <div class="container booking-grid">
+            <div class="booking-info">
+                <span class="section-subtitle">Agenda en Línea</span>
+                <h2>Consiente a tu mascota hoy mismo</h2>
+                <p>
+                    Selecciona los detalles de tu cita y te generaremos una solicitud personalizada para que nos contactes directo a **WhatsApp** y confirmemos tu espacio de inmediato.
+                </p>
+                
+                <div class="benefit-list">
+                    <div class="benefit-item">
+                        <div class="benefit-icon"><i class="fa-solid fa-check"></i></div>
+                        <div>
+                            <h4>Confirmación Inmediata</h4>
+                            <p>Tu mensaje de WhatsApp se pre-llena con todos los datos elegidos para agilizar el proceso.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon"><i class="fa-solid fa-check"></i></div>
+                        <div>
+                            <h4>Atención Personalizada</h4>
+                            <p>Alineamos el servicio según el temperamento y necesidades de tu peludito.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon"><i class="fa-solid fa-check"></i></div>
+                        <div>
+                            <h4>Seguridad Garantizada</h4>
+                            <p>Tus datos no se almacenan en servidores externos, van directo al chat con nuestro staff.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="booking-form-wrapper glass-card">
+                <form id="booking-form">
+                    <!-- Pet Type Selection Chips -->
+                    <div class="form-group">
+                        <label>Tipo de Mascota</label>
+                        <div class="pet-chips" id="pet-chips">
+                            <button type="button" class="chip-btn active" data-pet="Perro">
+                                <i class="fa-solid fa-dog"></i> Perro
+                            </button>
+                            <button type="button" class="chip-btn" data-pet="Gato">
+                                <i class="fa-solid fa-cat"></i> Gato
+                            </button>
+                            <button type="button" class="chip-btn" data-pet="Conejo">
+                                <i class="fa-solid fa-carrot"></i> Conejito
+                            </button>
+                            <button type="button" class="chip-btn" data-pet="Mascota Pequeña">
+                                <i class="fa-solid fa-paw"></i> Mascota Pequeña
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group-row">
+                        <!-- Pet Name -->
+                        <div class="form-group">
+                            <label for="pet-name">Nombre de la Mascota</label>
+                            <input type="text" id="pet-name" class="form-control" placeholder="Ej. Toby" required>
+                        </div>
+                        
+                        <!-- Service Selection -->
+                        <div class="form-group">
+                            <label for="pet-service">Servicio Principal</label>
+                            <select id="pet-service" class="form-control" required>
+                                <option value="" disabled selected>Selecciona un servicio</option>
+                                <option value="Baño y Estética">Baño y Estética Estilo</option>
+                                <option value="Hospedaje Boutique">Hospedaje Boutique (Hotel)</option>
+                                <option value="Guardería de Día">Guardería de Día</option>
+                                <option value="Vacunación / Desparasitante">Vacunación y Cuidado Preventivo</option>
+                                <option value="Consulta y Accesorios">Accesorios y Asesoría</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group-row">
+                        <!-- Date -->
+                        <div class="form-group">
+                            <label for="book-date">Fecha Deseada</label>
+                            <input type="date" id="book-date" class="form-control" required>
+                        </div>
+                        
+                        <!-- Time -->
+                        <div class="form-group">
+                            <label for="book-time">Hora Estimada</label>
+                            <select id="book-time" class="form-control" required>
+                                <option value="" disabled selected>Elige un horario</option>
+                                <option value="09:00 AM">09:00 AM</option>
+                                <option value="10:30 AM">10:30 AM</option>
+                                <option value="12:00 PM">12:00 PM</option>
+                                <option value="01:30 PM">01:30 PM</option>
+                                <option value="03:00 PM">03:00 PM</option>
+                                <option value="04:30 PM">04:30 PM</option>
+                                <option value="06:00 PM">06:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Perfume Selection (Spotlight feature) -->
+                    <div class="form-group">
+                        <label for="perfume-style">Fragancia Favorita de Aromaterapia/Perfume</label>
+                        <select id="perfume-style" class="form-control">
+                            <option value="Sin perfume / Olor neutro">Sin perfume específico (Olor Neutro)</option>
+                            <optgroup label="Aromaterapia Relajante">
+                                <option value="Aromaterapia de Lavanda (Antiestrés)">Lavanda (Antiestrés y ansiedad)</option>
+                                <option value="Aromaterapia de Menta (Agilidad mental)">Menta (Agilidad mental y humor)</option>
+                                <option value="Aromaterapia de Rosas (Miedo y nerviosismo)">Rosas (Calma temores y miedos)</option>
+                                <option value="Aromaterapia de Romero (Relajación total)">Romero (Libera el estrés acumulado)</option>
+                                <option value="Aromaterapia de Eucalipto (Cuidado de piel)">Eucalipto (Elimina bichitos y relaja)</option>
+                            </optgroup>
+                            <optgroup label="Perfumería Frutal">
+                                <option value="Perfume Frutal de Frutos Rojos">Frutos Rojos</option>
+                                <option value="Perfume Frutal de Cereza">Cereza Dulce</option>
+                                <option value="Perfume Frutal de Melón">Melón Refrescante</option>
+                                <option value="Perfume Frutal de Kiwi/Toronja">Kiwi y Toronja Cítrica</option>
+                            </optgroup>
+                            <optgroup label="Perfumería Fina - Ellas">
+                                <option value="Perfume Rocky (Hembra)">Rocky (Dulce e intenso)</option>
+                                <option value="Perfume Ari (Hembra)">Ari (Elegante y chic)</option>
+                                <option value="Perfume Hallowin (Hembra)">Hallowin (Místico y suave)</option>
+                                <option value="Perfume Elena (Hembra)">Elena (Fresco y floral)</option>
+                            </optgroup>
+                            <optgroup label="Perfumería Fina - Ellos">
+                                <option value="Perfume Absolut (Macho)">Absolut (Elegante y premium)</option>
+                                <option value="Perfume Voyage (Macho)">Voyage (Fresco y aventurero)</option>
+                                <option value="Perfume Hugo (Macho)">Hugo (Chic y varonil)</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    
+                    <!-- Notes -->
+                    <div class="form-group">
+                        <label for="book-notes">Notas Especiales / Comportamiento (Opcional)</label>
+                        <textarea id="book-notes" class="form-control textarea-control" placeholder="Ej. Es un poco temeroso con la secadora, prefiere corte con tijera..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        Solicitar Cita por WhatsApp <i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Contact Info Section -->
+    <section class="section-padding" id="contacto" style="background-color: white;">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">¿Dónde Estamos?</span>
+                <h2 class="section-title">Ven a visitarnos con tu peludo</h2>
+            </div>
+            
+            <div class="footer-grid">
+                <!-- Info column -->
+                <div class="footer-info-column">
+                    <a href="#" class="logo">
+                        <div class="logo-badge">
+                            <i class="fa-solid fa-paw"></i>
+                        </div>
+                        <span>Petbunny</span>
+                    </a>
+                    <p>
+                        Consintiendo a las mascotas de casa con amor, estilo y cuidado boutique. Perros, gatos y pequeñas mascotas son bienvenidos.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Links Column -->
+                <div class="footer-column">
+                    <h4>Enlaces</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#perfumeria">Perfumería</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#reservar">Reservar Cita</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact info Column -->
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Av. Menta y Rosas 402, Col. Del Valle, Monterrey, NL</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+52 81 2345 6789</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>hola@petbunny.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Lun - Sáb: 9:00 AM - 7:00 PM<br>Dom: 10:00 AM - 4:00 PM</span>
+                    </div>
+                </div>
+                
+                <!-- Map Mock Column -->
+                <div class="footer-column">
+                    <h4>Ubicación</h4>
+                    <div class="footer-map-mock">
+                        <!-- Stylized modern map simulation -->
+                        <img src="assets/pet_shop.png" alt="Mapa de Ubicación Petbunny" style="filter: grayscale(40%) contrast(110%); opacity: 0.85;">
+                        <div class="map-overlay">
+                            <div class="map-pin">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Copyright -->
+    <footer class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2026 Petbunny Boutique & Spa. Todos los derechos reservados. Diseñado con amor para consentir.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Lightbox Modals -->
+    
+    <!-- Gallery Photo Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <div class="lightbox-content">
+            <img src="" id="lightbox-img" alt="Vista ampliada">
+            <div style="background-color: white; padding: 20px; text-align: center;">
+                <h3 id="lightbox-title" style="margin-bottom: 5px; font-weight: 700; color: var(--text-dark);"></h3>
+                <p id="lightbox-desc" style="color: var(--text-muted); font-size: 14px;"></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Perfume/Aromatherapy Catalog Lightbox -->
+    <div class="lightbox" id="aroma-lightbox">
+        <button class="lightbox-close" id="aroma-lightbox-close">&times;</button>
+        <div class="lightbox-content" style="border-radius: var(--border-radius-md); overflow: hidden; background: white;">
+            <img src="" id="aroma-lightbox-img" alt="Detalle del catálogo de aromas" style="max-height: 80vh; object-fit: contain;">
+        </div>
+    </div>
+
+    <!-- Booking Confirmation Success Modal -->
+    <div class="success-modal" id="success-modal">
+        <div class="success-content">
+            <div class="success-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3>¡Solicitud Preparada!</h3>
+            <p id="success-text">Estamos abriendo WhatsApp con los datos de tu reserva para Toby. Envía el mensaje para confirmar tu cita.</p>
+            <button class="btn btn-primary" id="success-close-btn" style="width: 100%;">Aceptar y Continuar</button>
+        </div>
+    </div>
+
+    <!-- Application Script -->
+    <script src="app.js"></script>
+</body>
+</html>
